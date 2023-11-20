@@ -1,13 +1,13 @@
 import React from 'react'
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
+import Nav from '/src/components/global/Nav'
+
 
 const About = () => {
   return (
     <div>
         <Nav/>
       <h1>About Us</h1>
-        <Footer/>
+        
     </div>
   )
 }

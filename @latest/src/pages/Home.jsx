@@ -1,13 +1,12 @@
 import React from 'react'
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
+import Section1 from '../components/home/section1'
+
+
 
 const Home = () => {
   return (
     <div>
-        <Nav/>
-         <h1>Home</h1>
-         <Footer/>
+        <Section1/>
     </div>
   )
 }

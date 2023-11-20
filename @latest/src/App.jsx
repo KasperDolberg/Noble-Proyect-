@@ -1,23 +1,15 @@
-import Nav from './components/Nav'
-import Footer from './components/Footer'
-import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import { Routes, Route } from 'react-router-dom'
 
+
+
+import Nav from '/src/components/global/Nav.jsx'
+import Section1 from './components/home/section1'
 
 function App() {
   return (
     <>
-      <Nav/>
-      <Footer/>
-      <div className='container'>
-        <Routes>
-          <Route path='/Home' element={<Home/>}/>
-          <Route path='/Contact' element={<Contact/>}/>
-          <Route path='/About' element={<About/>}/>
-        </Routes>
-      </div>
+     <Nav/>
+     <Section1/>
+      
     </>
   )
 }
