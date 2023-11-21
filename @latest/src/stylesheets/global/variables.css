@@ -1,11 +1,26 @@
 :root {
+
+  /* colors */
     --bg-color: linear-gradient(180deg, rgb(244, 244, 241) 0%, rgb(255,255,255)100%);
     --bg-secondary: rgb(62, 64, 65);
     --details: rgb(240, 110, 0);
     --grey-text: rgba(0, 0, 0, 0.6);
     --black-text: rgb(0, 0, 0);
-    --font-family: Polestar Unica;
+    --white: rgb(255, 255, 255);
+    --text-color: hsl(273, 4%, 45%);
+
+  /* general settings */
+  --font-family: Polestar Unica;
+  --z-fixed: 100;
+
+  /* general sizes */
+  --big-font-size: 1.5rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+
   }
+
+
   
 
   @font-face {
