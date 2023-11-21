@@ -1,5 +1,5 @@
 import React from 'react'
-import Section1 from '../components/home/section1'
+import Section1 from '/src/components/home/Section1'
 
 
 
