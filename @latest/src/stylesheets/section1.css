@@ -120,7 +120,7 @@ img {
 .logo-container {
   display: flex;
   justify-content: flex-end;
-  width: 95%;
+  width: 93%;
 }
 
 .header__toggle {
