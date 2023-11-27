@@ -5,8 +5,8 @@ const Section1 = () => {
   return (
     <div className="swiper">
       <div className="swiper-slide first">
-        <div className="bg-color-one"></div>
-        <div className="bg-color-two"></div>
+        {/* <div className="bg-color-one"></div>
+        <div className="bg-color-two"></div> */}
         <div className="father-container">
           <div className="icon-white-container">
             <div className="noble-icon-white">
@@ -109,13 +109,7 @@ const Section1 = () => {
 
 
   {/* PRINCIPAL LETTERS AND THE CAR */}
-        <div className="StylesMain">
-          <div className="letters">
-            <h1>m600</h1>
-          </div>
-          <div className="car-container png car">
-            <img src="./src/img/Noble_M600-original.png" alt="" />
-          </div>
+        <div className="StylesMain">       
         </div>
   {/* PRINCIPAL LETTERS AND THE CAR */}
 

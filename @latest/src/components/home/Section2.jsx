@@ -1,5 +1,5 @@
 import React from 'react';
-import '/src/stylesheets/section2.css';
+import '/src/stylesheets/Section2.css';
 import videoBg from '/src/img/S1.mp4'
 
 const Section2 = () => {
