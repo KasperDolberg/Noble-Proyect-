@@ -17,9 +17,9 @@ const Footer = () => {
                 your inbox.
               </p>
               {/* button */}
-              <a role="link" className="css-rzaghs" id="172178027" href="#">
+              <a role="link" className="css-rzaghss" id="172178027" href="#">
                 <span className="css-1n75gs1">
-                  <span className="css-1lfoa71">Learn more</span>
+                  <span className="css-1lfoa711">Learn more</span>
                   <span
                     aria-hidden="true"
                     data-type="icon"
