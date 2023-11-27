@@ -329,7 +329,7 @@ img {
   height: 100%;
   top: 0;
   bottom: 0;
-  width: 33.%;
+  width: 33%;
   background: linear-gradient(180deg, rgb(244, 244, 241) 0%, rgb(255, 255,255)100%);
   z-index: -1;
 }
@@ -343,9 +343,9 @@ img {
 
 .StylesMain{
   height: 100%;
-  background-image: url('/src/img/laptop.webp');
-  background-size: cover;
-  background-position: -3%;
+  background-image: url('/src/img/definitive-index.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .info-container {
