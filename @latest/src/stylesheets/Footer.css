@@ -4,7 +4,7 @@
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
-  color: rgb(0, 0, 0);
+  color: var(--black-text);
 }
 .container-father-at-all {
   display: flex;
@@ -19,7 +19,7 @@
   justify-content: space-around;
   width: 90%;
   height: 76%;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid var(--black-text);
 }
 
 .container-stay-up {
@@ -28,7 +28,7 @@
 }
 .container-stay-up p {
   font-weight: 500;
-  color: rgb(0, 0, 0);
+  color: var(--black-text);
   overflow-wrap: anywhere;
   font-size: 1rem;
   letter-spacing: -0.01875rem;
@@ -43,7 +43,6 @@
 }
 
 .accordion-button {
-  color: rgba(0, 0, 0, 0.6);
   font-size: 1rem;
   letter-spacing: -0.01875rem;
   line-height: 1.125rem;
@@ -52,7 +51,10 @@
   align-items: flex-start;
   padding-bottom: 30px;
 }
-
+.accordion-button h1 {
+  font-size: 1rem;
+  color: var(--grey-text);
+}
 .container-child ul {
   display: flex;
   flex-direction: column;
@@ -64,13 +66,12 @@
   vertical-align: baseline;
   padding-bottom: 20px;
 }
-.container-child li a {
+.container-child .accordion .accordion-body .content li a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: var(--black-text);
   font-size: 1rem;
   letter-spacing: -0.01875rem;
   font-weight: 400;
-  font-size: 17px;
 }
 
 .accordion {
@@ -80,7 +81,7 @@
 
 .stay-up p {
   font-weight: 500;
-  color: rgb(0, 0, 0);
+  color: var(--black-text);
   overflow-wrap: anywhere;
   font-size: 1rem;
   letter-spacing: -0.01875rem;
@@ -107,11 +108,10 @@
 }
 .container-child li a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: var(--black-text);
   font-size: 1rem;
   letter-spacing: -0.01875rem;
   font-weight: 400;
-  font-size: 20px;
 }
 
 input[type="checkbox"] {
@@ -163,7 +163,7 @@ input[type="checkbox"] {
     width: 100%;
     margin: 4px;
     padding: 1rem;
-    border-block-end: 1px solid rgb(0, 0, 0);
+    border-block-end: 1px solid var(--black-text);
     transition: color 300ms ease 0s, border 300ms ease 0s;
   }
   .accordion label {
@@ -187,14 +187,15 @@ input[type="checkbox"] {
     padding-right: 0;
   }
   .accordion-button {
-    color: rgb(0, 0, 0);
     font-size: 1rem;
     cursor: pointer;
     padding: 10px;
   }
-
+  .accordion-button h1 {
+    color: var(--black-text);
+  }
   .accordion-body {
-    color: #000000;
+    color: var(--black-text);
     padding: 0 10px;
     line-height: 26px;
     max-height: 0;
