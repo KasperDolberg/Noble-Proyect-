@@ -780,6 +780,8 @@ z-index: 11;
   line-height: 0;
 }
 
+
+
 .css-1ckl8y4 >* {
   grid-area: 1/1;
 }
@@ -1045,8 +1047,28 @@ z-index: 11;
 
 
 
+.css-1ckl8y4 {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
+.css-1ckl8y4:hover .css-jyc14k {
+  transform: translateX(20px);
+  opacity: 0;
+}
 
+.css-1ckl8y4:hover::before {
+  content: '\2190'; /* Código Unicode para la flecha izquierda */
+  position: absolute;
+  left: -20px;
+  opacity: 0;
+  transition: left 0s 0.3s, opacity 0.3s ease;
+}
+
+.css-1ckl8y4:hover::before {
+  left: 100%;
+  opacity: 1;
+  transition: left 0.3s ease, opacity 0.3s 0.3s;
+}
 
 
 
