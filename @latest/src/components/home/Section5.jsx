@@ -46,7 +46,7 @@ const Section5 = () => {
                               >
                                 <path
                                   d="M8 2 6.95 3.05l4.2 4.2H2v1.5h9.15l-4.2 4.2L8 14l6-6-6-6Z"
-                                  fill="currentColor"
+                                  fill="#FFAD0A"
                                 ></path>
                               </svg>
                             </div>
@@ -97,7 +97,7 @@ const Section5 = () => {
                             >
                               <path
                                 d="M8 2 6.95 3.05l4.2 4.2H2v1.5h9.15l-4.2 4.2L8 14l6-6-6-6Z"
-                                fill="currentColor"
+                                fill="#FFAD0A"
                               ></path>
                             </svg>
                           </div>

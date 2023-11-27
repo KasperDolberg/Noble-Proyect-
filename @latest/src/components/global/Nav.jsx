@@ -39,7 +39,7 @@ const Nav = () => {
     <header className="header">
        <div className="logo-container">
         <a href="#" id="header__logo"></a>
-        <i className="bx bx-menu header__toggle" id="header-toggle" style={{ color: 'black' }}></i>
+        <i className="bx bx-menu header__toggle" id="header-toggle" style={{ color: '#FFAD0A' }}></i>
 
     </div>
     <nav className="nav" id="nav-menu">
