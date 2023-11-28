@@ -23,7 +23,7 @@ const Section4 = () => {
                             <a role="link" className="css-13c2ifd" href="/us/polestar-3/">
                             <span data-focus-theme="dark" id="142237965" className="css-cfxo7m">
                                 <span className="css-1n75gs1">
-                                <span className="css-1lfoa711">Discover</span>
+                                <span className="css-1lfoa711">Finance</span>
                                 <span aria-hidden="true" data-type="icon" className="css-1lru1qp">
                                     <div className="css-1ckl8y4">
                                     <div className="css-jyc14k" style={{ opacity: 1, transform: 'translateX(0em)' }}>

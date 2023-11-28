@@ -156,6 +156,11 @@
 }
 
 @media (max-width: 475px) {
+    .big-container {
+        width: 100%;
+        height: 100%;
+    }
+    
     .small-container {
         display: grid;
         align-items: start;
