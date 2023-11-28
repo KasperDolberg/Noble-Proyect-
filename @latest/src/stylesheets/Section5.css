@@ -27,7 +27,7 @@
     width: 85%;
     height: 80%;
     display: grid;
-    grid-template-columns: 47.5% 47.5%;
+    grid-template-columns: 49% 49%;
     grid-template-rows: 85%;
     justify-content: center;
     column-gap: 1.8rem;
@@ -191,7 +191,7 @@
     margin-inline-end: -5px;
 }
 
-.css-ttcv04 [data-type='icon'] {
+.css-ttcv05 [data-type='icon'] {
     color: var(--details);
 }
 

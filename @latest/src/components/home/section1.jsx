@@ -5,8 +5,8 @@ const Section1 = () => {
   return (
     <div className="swiper">
       <div className="swiper-slide first">
-        <div className="bg-color-one"></div>
-        <div className="bg-color-two"></div>
+        {/* <div className="bg-color-one"></div>
+        <div className="bg-color-two"></div> */}
         <div className="father-container">
           <div className="icon-white-container">
             <div className="noble-icon-white">
@@ -53,7 +53,7 @@ const Section1 = () => {
                         >
                           <path
                             d="M8 2 6.95 3.05l4.2 4.2H2v1.5h9.15l-4.2 4.2L8 14l6-6-6-6Z"
-                            fill="rgb(74, 120, 168)"
+                            fill="#FFAD0A"
                           ></path>
                         </svg>
                       </div>
@@ -89,7 +89,7 @@ const Section1 = () => {
                           >
                             <path
                               d="M8 2 6.95 3.05l4.2 4.2H2v1.5h9.15l-4.2 4.2L8 14l6-6-6-6Z"
-                              fill="rgb(74, 120, 168)"
+                              fill="#FFAD0A"
                             ></path>
                           </svg>
                         </div>
@@ -109,13 +109,7 @@ const Section1 = () => {
 
 
   {/* PRINCIPAL LETTERS AND THE CAR */}
-        <div className="StylesMain">
-          <div className="letters">
-            <h1>m600</h1>
-          </div>
-          <div className="car-container png car">
-            <img src="./src/img/Noble_M600-original.png" alt="" />
-          </div>
+        <div className="StylesMain">       
         </div>
   {/* PRINCIPAL LETTERS AND THE CAR */}
 

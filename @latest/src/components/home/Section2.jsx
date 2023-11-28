@@ -1,5 +1,5 @@
 import React from 'react';
-import '/src/stylesheets/section2.css';
+import '/src/stylesheets/Section2.css';
 import videoBg from '/src/img/S1.mp4'
 
 const Section2 = () => {
@@ -38,7 +38,7 @@ const Section2 = () => {
                               >
                                 <path
                                   d="M8 2 6.95 3.05l4.2 4.2H2v1.5h9.15l-4.2 4.2L8 14l6-6-6-6Z"
-                                  fill="rgb(74, 120, 168)"
+                                  fill="#FFAD0A"
                                 ></path>
                               </svg>
                             </div>
