@@ -39,7 +39,7 @@ const Nav = () => {
     <header className="header">
        <div className="logo-container">
         <a href="#" id="header__logo"></a>
-        <i className="bx bx-menu header__toggle" id="header-toggle" style={{ color: 'black' }}></i>
+        <i className="bx bx-menu header__toggle" id="header-toggle" style={{ color: '#FFAD0A' }}></i>
 
     </div>
     <nav className="nav" id="nav-menu">
@@ -64,25 +64,25 @@ const Nav = () => {
 
                     <li className="nav__item">
                         <a href="#about" className="nav__link">
-                            <i className='bx bxs-car-garage bx-tada' ></i> Discover
+                            <i className='bx bxs-car-garage bx-tada' ></i> Abailable Cars
                         </a>
                     </li>
 
                     <li className="nav__item">
                         <a href="#portfolio" className="nav__link">
-                            <i className='bx bxs-credit-card' ></i> Current Offers
+                            <i className='bx bxs-credit-card' ></i> Finance
                         </a>
                     </li>
 
                     <li className="nav__item">
                         <a href="#skills" className="nav__link">
-                            <i className='bx bx-book-bookmark' ></i> About Us
+                            <i className='bx bx-book-bookmark' ></i> News
                         </a>
                     </li>
 
                     <li className="nav__item">
                         <a href="#contact" className="nav__link">
-                            <i className='bx bx-message-square-detail'></i> Contact
+                            <i className='bx bx-message-square-detail'></i> About Us
                         </a>
                     </li>
                 </ul>

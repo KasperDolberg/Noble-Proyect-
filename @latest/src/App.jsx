@@ -1,20 +1,28 @@
 import React from "react";
-import Nav from "/src/components/global/Nav.jsx";
-import Footer from "/src/components/global/Footer.jsx";
-import Section1 from "/src/components/home/Section1";
-import Section2 from "./components/home/section2";
-import Section5 from "/src/components/home/Section5";
+import {Route, Routes } from "react-router-dom";
+import Home from "/src/pages/Home";
+import Configure from "/src/pages/Configure";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import Finance from "./pages/finance";
+
 
 function App() {
   return (
     <>
-      <Nav />
-      <Section1 />
-      <Section2 />
-      <Section5 />
-      <Footer />
+    <Routes>
+       <Route path="/" element={<Home />} />
+       <Route path="/configure" element={<Configure />} />   
+       <Route path="/gallery" element={<Gallery />} />  
+       <Route path="/contact" element={<Contact />} />    
+       <Route path="/about" element={<About />} />   
+       <Route path="/finance" element={<Finance />} />  
+
+    </Routes>
     </>
   );
 }
 
 export default App;
+
