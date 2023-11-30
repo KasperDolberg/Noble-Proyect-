@@ -1,0 +1,222 @@
+@import url("./global/variables.css");
+
+* {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
+.container-father-at-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+  background-color: var(--bg-footer-color);
+}
+.container-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  height: 76%;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.container-stay-up {
+  width: 300px;
+  padding-right: 30px;
+}
+.container-stay-up p {
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  overflow-wrap: anywhere;
+  font-size: 1rem;
+  letter-spacing: -0.01875rem;
+  line-height: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+.stay-up h1 {
+  font-size: 1.875rem;
+  letter-spacing: -0.075rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.accordion-button {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  letter-spacing: -0.01875rem;
+  line-height: 1.125rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-bottom: 30px;
+}
+
+.container-child ul {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 0;
+}
+.container-child li {
+  list-style: none;
+  vertical-align: baseline;
+  padding-bottom: 20px;
+}
+.container-child li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  letter-spacing: -0.01875rem;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.accordion {
+  width: 150px;
+  padding-right: 20px;
+}
+
+.stay-up p {
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  overflow-wrap: anywhere;
+  font-size: 1rem;
+  letter-spacing: -0.01875rem;
+  line-height: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+.stay-up h1 {
+  font-size: 1.875rem;
+  letter-spacing: -0.075rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-child ul {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 0;
+}
+.container-child li {
+  list-style: none;
+  vertical-align: baseline;
+  padding-bottom: 20px;
+}
+.container-child li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  letter-spacing: -0.01875rem;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+.accordion label i {
+  display: none;
+}
+.rights {
+  padding-bottom: 0.98rem;
+  background-color: var(--bg-footer-color);
+  text-align: center;
+}
+
+.rights h1 {
+  font-size: 10px;
+}
+/* Media query para pantallas con un ancho máximo de 959px */
+@media (max-width: 959px) {
+  .container-father-at-all {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-footer-color);
+  }
+  .container-stay-up {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    padding-bottom: 3rem;
+  }
+  .stay-up {
+    padding: 0;
+  }
+
+  .container-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 30px auto;
+    border-bottom: none;
+  }
+
+  /* Estilos generales para el accordion */
+  .accordion {
+    width: 100%;
+    margin: 4px;
+    padding: 1rem;
+    border-block-end: 1px solid rgb(0, 0, 0);
+    transition: color 300ms ease 0s, border 300ms ease 0s;
+  }
+  .accordion label {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+  .accordion label i {
+    display: grid;
+    justify-content: end;
+    grid-column: 2;
+  }
+
+  .accordion label h1 {
+    font-size: 1rem;
+    grid-column: 1;
+  }
+  .content li a {
+    font-size: 1rem;
+  }
+  .container-stay-up {
+    padding-right: 0;
+  }
+  .accordion-button {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .accordion-body {
+    color: #000000;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+  }
+
+  /* Mostrar el contenido cuando el checkbox está marcado */
+  input[type="checkbox"]:checked + .accordion-button + .accordion-body {
+    max-height: 400px;
+    padding: 10px 10px 0px;
+  }
+}
+
+@font-face {
+  src: url(https://www.polestar.com/shared-assets/fonts/polestar-unica/regular.woff2)
+      format("woff2"),
+    url(https://www.polestar.com/shared-assets/fonts/polestar-unica/regular.woff)
+      format("woff");
+  font-family: Polestar Unica;
+
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

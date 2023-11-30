@@ -62,7 +62,7 @@ const Section5 = () => {
 
             <div className="card-news">
               <div className="image-container">
-                <img src="./src/img/news-1-.jpg" alt="" />
+                <img src="./src/img/news-2.jpg" alt="" />
               </div> 
               <div className="title-container-father">
                 <div className="title-container">
