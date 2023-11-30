@@ -183,12 +183,11 @@ const Footer = () => {
       </div>
 
       <div className="rights">
-        <h1>Noble@2023 All rights reserved</h1>
-
-        <a href="">
+      <a href="">
           This website is solely intended for educational purposes. We do not
           claim ownership of any rights to the content presented herein.
         </a>
+        <h1>Noble@2023 All rights reserved</h1>
       </div>
     </footer>
   );

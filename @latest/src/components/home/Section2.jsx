@@ -1,6 +1,7 @@
 import React from 'react';
-import '/src/stylesheets/Section2.css';
-import videoBg from '/src/img/S1.mp4'
+import '/src/stylesheets/home/Section2.css';
+import videoBg from '/src/img/home/Section2/S1.mp4'
+import { Link } from 'react-router-dom';
 
 const Section2 = () => {
   return (
@@ -15,11 +16,10 @@ const Section2 = () => {
                       label="Book a test drive"
                       target="_blank"
                       rel="noreferrer noopener"
-                      href="/us/test-drive/booking/ps2/"
                       className="css-ttcv04"
                     >
                       <span className="css-1j2esho">
-                        <span className="css-1lfoa71-">Learn more</span>
+                        <span className="css-1lfoa71-"><Link to='/gallery' className="css-1lfoa71-">Learn more</Link></span>
                         <span
                           aria-hidden="true"
                           data-type="icon"

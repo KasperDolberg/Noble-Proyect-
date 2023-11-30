@@ -1,5 +1,5 @@
 import React from 'react'
-import '/src/stylesheets/Section5.css';
+import '/src/stylesheets/home/Section5.css';
 
 const Section5 = () => {
   return (
@@ -11,7 +11,7 @@ const Section5 = () => {
 
             <div className="card-about">
             <div className="image-container">
-               <img src="/src/img/company.jpg" alt="" />
+               <img src="/src/img/home/Section5/company.jpg" alt="" />
             </div> 
               <div className="title-container-father">
                 <div className="title-container">
@@ -62,7 +62,7 @@ const Section5 = () => {
 
             <div className="card-news">
               <div className="image-container">
-                <img src="./src/img/news-1-.jpg" alt="" />
+                <img src="/src/img/home/Section5/news-secondary.jpg" alt="" />
               </div> 
               <div className="title-container-father">
                 <div className="title-container">

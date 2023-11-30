@@ -1,5 +1,6 @@
 import React from 'react';
-import '/src/stylesheets/Section1.css';
+import '/src/stylesheets/home/Section1.css';
+import { Link } from 'react-router-dom';
 
 const Section1 = () => {
   return (
@@ -10,7 +11,7 @@ const Section1 = () => {
         <div className="father-container">
           <div className="icon-white-container">
             <div className="noble-icon-white">
-              <img src="./src/img/LOGO.png" alt="" />
+              <img src="/src/img/home/Section1/LOGO.png" alt="" />
             </div>
           </div>
         {/* SETTINGS CONTAINERS */}
@@ -19,7 +20,7 @@ const Section1 = () => {
       <div className="info-container">
         <div className="text">
           <div className="noble-icon">
-            <img src="./src/img/LOGO.png" alt="" />
+            <img src="/src/img/home/Section1/LOGO.png" alt="" />
           </div>
           <h1 id="NOBLE">Noble</h1>
           <h1 id="m-600">M-600</h1>
@@ -30,7 +31,7 @@ const Section1 = () => {
           {/* BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS */}
           <div className="css-1xdm420">
             <div className="css-5pduei">
-              <a role="link" className="css-rzaghs" id="172178027" href="#">
+              <Link to='/configure' role="link" className="css-rzaghs" id="172178027">
                 <span className="css-1n75gs1">
                   <span className="css-1lfoa71">Available cars</span>
                   <span
@@ -60,7 +61,7 @@ const Section1 = () => {
                     </div>
                   </span>
                 </span>
-              </a>
+              </Link>
               <a role="link" className="css-13c2ifd" href="#">
                 <span
                   data-focus-theme="light"
