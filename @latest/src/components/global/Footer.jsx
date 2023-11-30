@@ -1,5 +1,5 @@
-import React from "react";
-import "/src/stylesheets/Footer.css";
+import React from 'react'
+import '/src/stylesheets/Footer.css'
 
 const Footer = () => {
   return (
@@ -17,9 +17,9 @@ const Footer = () => {
                 your inbox.
               </p>
               {/* button */}
-              <a role="link" className="css-rzaghs" id="172178027" href="#">
+              <a role="link" className="css-rzaghss" id="172178027" href="#">
                 <span className="css-1n75gs1">
-                  <span className="css-1lfoa71">Learn more</span>
+                  <span className="css-1lfoa711">Learn more</span>
                   <span
                     aria-hidden="true"
                     data-type="icon"
@@ -40,7 +40,7 @@ const Footer = () => {
                         >
                           <path
                             d="M8 2 6.95 3.05l4.2 4.2H2v1.5h9.15l-4.2 4.2L8 14l6-6-6-6Z"
-                            fill="orange"
+                            fill="#FFAD0A"
                           ></path>
                         </svg>
                       </div>
@@ -183,12 +183,11 @@ const Footer = () => {
       </div>
 
       <div className="rights">
-        <h1>Noble@2023 All rights reserved</h1>
-
-        <a href="">
+      <a href="">
           This website is solely intended for educational purposes. We do not
           claim ownership of any rights to the content presented herein.
         </a>
+        <h1>Noble@2023 All rights reserved</h1>
       </div>
     </footer>
   );

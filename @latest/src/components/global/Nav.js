@@ -24,8 +24,16 @@
 //             this.classList.add('active');
 //         }
 
+<<<<<<< HEAD
 //         navLink.forEach(n => n.addEventListener('click', linkAction));
 //     } catch (error) {
 //         console.error('Error en handleNavLinkClick:', error);
 //     }
 // };
+=======
+        navLink.forEach(n => n.addEventListener('click', linkAction));
+    } catch (error) {
+        console.error('Error en handleNavLinkClick:', error);
+    }
+};
+>>>>>>> e4986bf6ced4b4131cc7f5d4a38b6371a12f0ce3
