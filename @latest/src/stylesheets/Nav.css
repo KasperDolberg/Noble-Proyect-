@@ -374,12 +374,6 @@ font-family: "Poppins", sans-serif;
 padding-bottom: 10rem;
 }
 
-.StylesMain h1{
-  color:transparent;
-  -webkit-background-clip: text;
-  background-image: url(https://media4.giphy.com/media/npir9WHfFyvO8/200w.webp);
-}
-
 .StylesMain .car-container
 {
 grid-area: 1/1;

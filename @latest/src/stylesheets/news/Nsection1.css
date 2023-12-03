@@ -1,0 +1,196 @@
+@import url("/src/stylesheets/global/variables.css");
+
+*{
+    font-family: var(--font-family);
+}
+
+/* ----------------- GENERALS CONTAINERS ----------------- */
+
+.container-absolute {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container-square{
+    width: 85%;
+    height: 100%;
+}
+
+
+
+
+/* ------------- header title ---------------- */
+.title-news {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+}
+.title-news h2 {
+    font-size: 1.85rem;
+    padding-bottom: .2rem;
+}
+
+.line-grey {
+    width: 100%;
+    height: 1px;
+    background-color:rgba(0, 0, 0, 2); 
+}
+
+   
+
+
+
+
+
+/* -----------  break-news container  ----------- */
+.break-news {
+    width: 100%;
+    height: 85%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+
+
+/* --------- News information ------------ */
+.information {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.info-content {
+    width: 100%;
+    height: 70%;
+}
+
+.date{
+    color: var(--black-color);
+    overflow-wrap: anywhere;
+    font-size: .95rem;
+    letter-spacing: -0.01875rem;
+    line-height: 1.125rem;
+    padding-bottom: 1rem;
+}
+
+.info-content .breaknews-header {
+    width: 65%;
+    color: var(--black-color);
+    overflow-wrap: anywhere;
+    font-size: 1.7rem;
+    letter-spacing: -0.075rem;
+    line-height: 1.8rem;
+}
+
+.short-info {
+    width: 70%;
+    color: var(--black-color);
+    overflow-wrap: anywhere;
+    font-size: .9rem;
+    letter-spacing: -0.01875rem;
+    line-height: 1.125rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    padding-top: 5px;
+    margin-top: -5px;
+}
+
+.css-o1dubm {
+    height: .5rem;
+}
+
+
+/*--------------- image  ------------- */
+.img-new {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.container-img-breaknews {
+    height: 70%;
+    width: 100%;
+}
+
+.img-new img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}   
+
+
+
+/* ------------- MEDIA QUERIES ------------- */
+@media screen and (max-width: 960px){
+    .container-absolute {
+        height: 140vh;
+    }
+    .break-news {
+        width: 100%;
+        height: 85%;
+        grid-template-columns: 100%;
+        grid-template-rows: 70% 30%;
+    }
+    .information{
+        grid-row: 2;
+        align-items: start  ;
+    }
+    .date {
+        font-size: 1rem;
+    }
+
+    .info-content .breaknews-header {
+        width: 85%;
+        line-height: 1.8rem;
+    }
+
+    .img-new {
+        grid-row: 1;
+        align-items: start;
+    }
+
+    .short-info {
+        width: 70%;
+        font-size: 1.02rem;
+    }
+    .container-img-breaknews {
+        height: 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .container-absolute {
+        height: 160vh;
+    }
+    .break-news {
+        width: 100%;
+        height: 85%;
+        grid-template-columns: 100%;
+        grid-template-rows: 65% 35%;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .container-absolute {
+        height: 115vh;
+    }
+    .break-news {
+        width: 100%;
+        height: 85%;
+        grid-template-columns: 100%;
+        grid-template-rows: 42% 58%;
+    }
+}
+
+
+
+

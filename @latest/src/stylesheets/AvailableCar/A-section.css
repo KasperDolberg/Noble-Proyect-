@@ -1,0 +1,146 @@
+@import url("/src/stylesheets/global/variables.css");
+
+*{
+    font-family: var(--font-family);
+}
+
+/* ----------------- GENERALS CONTAINERS  -------------------- */
+.container-absolute2 {
+    width: 100%;
+    min-height: 160vh;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.container-square2{
+    width: 85%;
+    min-height: 100%;
+    background-color: blue;
+    display: grid;
+    grid-template-rows: 10% 58% 32%;
+}
+
+/* ------------- header title ---------------- */
+.title-models {
+    min-height: 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.title-models h2 {
+    font-size: 1.85rem;
+    padding-bottom: .2rem;
+}
+
+.line-grey {
+    width: 100%;
+    height: 1px;
+    background-color:rgba(0, 0, 0, 2); 
+}
+
+
+
+
+/* ------------------- MODELS CONTAINER ----------------- */
+.container-models-section {
+    background-color: brown;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    column-gap: 1.5rem;
+}
+
+.slider-container {
+    background-color: blueviolet;
+}
+
+.select-model-container {
+    background-color: yellow;
+}
+
+
+
+
+
+/* ----------------SLIDER CONTENT STYLES -----------------*/
+.slider-container {
+    background-color:teal;
+    width: 100%;
+}
+
+.slider {
+    width: 100%;
+    height: 60%;
+}
+
+
+
+
+/* ----------------- CHARACTERISTICS STYLES ---------------- */
+.characteristics-container {
+    background-color: rgb(9, 255, 0);
+    display: grid;
+    align-items: center;
+}
+
+.characteristics {
+    background-color: #ccc;
+}
+
+.characteristics div h3 {
+    overflow-wrap: anywhere;
+    font-size: 1rem;
+    letter-spacing: -0.01875rem;
+    line-height: 1.125rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    transition: color 200ms ease 0s;
+    color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    text-align: left;
+    width: 50%;
+}
+
+.characteristics div p {
+    color: rgb(0, 0, 0);
+    overflow-wrap: anywhere;
+}
+
+.characteristics-wrap {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.css-1schyut {
+    flex-shrink: 0;
+    transition: width 300ms ease 0s, height 300ms ease 0s;
+    height: 1.5rem;
+}
+
+.brand-name {
+    color: rgb(0, 0, 0);
+    overflow-wrap: anywhere;
+    font-size: 1.875rem;
+    letter-spacing: -0.075rem;
+    line-height: 2rem;
+}
+
+.second-name {
+    overflow-wrap: anywhere;
+    font-size: 1rem;
+    letter-spacing: -0.01875rem;
+    line-height: 1.125rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    transition: color 200ms ease 0s;
+    color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    text-align: left;
+    width: 50%;
+}

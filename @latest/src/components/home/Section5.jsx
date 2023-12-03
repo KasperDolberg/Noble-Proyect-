@@ -1,5 +1,6 @@
 import React from 'react'
 import '/src/stylesheets/home/Section5.css';
+import { Link } from 'react-router-dom';
 
 const Section5 = () => {
   return (
@@ -27,7 +28,7 @@ const Section5 = () => {
                       className="css-ttcv04"
                     >
                       <span className="css-1j2esho">
-                        <span className="css-1lfoa71">About us</span>
+                        <span className="css-1lfoa71"><Link to='/about' className="css-1lfoa71">About us</Link></span>
                         <span
                           aria-hidden="true"
                           data-type="icon"
@@ -62,7 +63,7 @@ const Section5 = () => {
 
             <div className="card-news">
               <div className="image-container">
-                <img src="/src/img/home/Section5/news-secondary.jpg" alt="" />
+                <img src="/src/img/home/Section5/news-2.jpg" alt="" />
               </div> 
               <div className="title-container-father">
                 <div className="title-container">
@@ -78,7 +79,7 @@ const Section5 = () => {
                     className="css-ttcv04"
                   >
                     <span className="css-1j2esho">
-                      <span className="css-1lfoa71">View News</span>
+                      <span className="css-1lfoa71"><Link to='/news' className="css-1lfoa71">View News</Link></span>
                       <span
                         aria-hidden="true"
                         data-type="icon"

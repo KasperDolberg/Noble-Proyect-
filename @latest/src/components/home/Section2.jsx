@@ -1,5 +1,5 @@
 import React from 'react';
-import '/src/stylesheets/home/Section2.css';
+import '/src/stylesheets/home/section2.css';
 import videoBg from '/src/img/home/Section2/S1.mp4'
 import { Link } from 'react-router-dom';
 
