@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('src/stylesheets/global/variables.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var( --font-family);
+    background-color: var(--bg-color);
+}
+/* ----------------GENERAL-SETTING--------------- */
+.Section-1{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+}
+.container-85{
+    display: grid;
+    grid-template-rows: 25% 75%;
+    height: 100%;
+    width: 85%;
+}
+/* ------------------start-header------------ */
+.header-{
+    display: grid;
+    grid-template-rows: 40% 60%;
+    height: 100%;
+    width: 100%;
+}
+.about-noble-{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    align-items: end;
+    justify-items: start;
+    border-bottom: 1px solid ;
+}
+.Tittle-{
+    color: rgb(0, 0, 0);
+    overflow-wrap: anywhere;
+    font-size: 1.875rem;
+    letter-spacing: -0.075rem;
+    line-height: 2rem;
+}
+.philosophy-{
+     display: grid;
+     padding-top: 10px;
+     height: 100%;
+     width: 100%;
+     align-items: start;
+     justify-items: start;
+}
+.text-phi{
+    color: #000;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: -0.075rem;
+}
+.space---{
+    display: block;
+}
+/* -----------------end---header------------ */
+.main{
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+.Video-Container--{
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+.my-Video-my{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+  @media (max-width: 1200px) {
+    .text-phi{
+        color: #000;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 2rem;
+        letter-spacing: -0.075rem;
+    }
+    
+}
+@media (max-width: 756px) {
+.Section-1{
+    display: grid;
+    height: 120vh;
+    width: 100%;
+    place-items: center;
+}
+.container-85{
+    display: grid;
+    grid-template-rows: 35% 65%;
+    height: 100%;
+    width: 85%;
+}
+}
+@media (max-width: 385px){
+    .Section-1{
+        display: grid;
+        height: 130vh;
+        width: 100%;
+        place-items: center;
+    }
+    .container-85{
+        display: grid;
+        grid-template-rows: 35% 65%;
+        height: 100%;
+        width: 85%;
+    }
+}
+/* --------------------------------------------SECTION-2---------------------------------------------------- */
+.Section-2{
+    display: grid;
+    height: 150vh;
+    width: 100%;
+    place-items: center;
+}
+.container-85-section-2{
+    display: grid;
+    grid-template-rows: 40% 60%;
+    height: 100%;
+    width: 85%;
+}
+/* -----------------tittle-text---txt------------- */
+.Text-here-{
+    display: grid;
+    grid-template-rows: 60% 40%;
+    width: 100%;
+    height: 100%;
+}
+/* ----------------TITTLE--------- */
+.Tittle-S2{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    border-bottom: 1px solid;
+}
+.Experience{
+    color: rgb(0, 0, 0);
+    overflow-wrap: anywhere;
+    font-size: 5rem;
+    line-height: 3.625rem;
+    white-space: pre-line;
+}
+.space-bt--{
+    display: block;
+    padding-top: 1rem;
+}
+/* -----------TEXT-TXT------------ */
+.Text-S2{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 100%;
+    height: 100%;
+}
+.History-{
+    
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.History-tittle-{
+    display: grid;
+    padding-bottom: 1rem;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: -0.075rem;
+}
+.little-text-father-{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.little-text-child-1-{
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    width: 100%;
+    height: 100%;
+}
+.little-text-child-2-{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.History-Text-{
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: -0.075rem;
+    word-wrap: break-word; /* Hace que las palabras se envuelvan al final de la línea si no hay espacio suficiente */
+    white-space: pre-line; /* Mantiene los saltos de línea en el texto original */
+}
+/* --------------img-------------- */
+.THEY-KNOW-ME-SON {
+    width: 100%;
+ }
+   @media (max-width: 959px) {
+    .THEY-KNOW-ME-SON  {
+     width: 100%;
+    }
+   }
+   
+
+@media (max-width: 385px){
+    .Section-2{
+        display: grid;
+        height: 170vh;
+        width: 100%;
+        place-items: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .Experience{
+        color: rgb(0, 0, 0);
+        overflow-wrap: anywhere;
+        font-size: 3rem;
+        line-height: 3.625rem;
+        white-space: pre-line;
+    }
+}
+@media (max-width: 654px){
+    .History-Text-{
+        color: #000;
+        font-size: 0.2rem;
+        font-weight: 400;
+        line-height: 2rem;
+        letter-spacing: -0.075rem;
+        word-wrap: break-word; /* Hace que las palabras se envuelvan al final de la línea si no hay espacio suficiente */
+        white-space: pre-line; /* Mantiene los saltos de línea en el texto original */
+    }
+}

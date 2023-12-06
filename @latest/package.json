@@ -13,11 +13,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
-<<<<<<< HEAD
-    "react-router-dom": "^6.17.0"
-=======
+
+
     "react-router-dom": "^6.20.0"
->>>>>>> e4986bf6ced4b4131cc7f5d4a38b6371a12f0ce3
+
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
