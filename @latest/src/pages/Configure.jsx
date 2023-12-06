@@ -2,7 +2,10 @@ import React from 'react'
 
 const Configure = () => {
   return (
-    <div>Configure</div>
+    <div>
+      hola3
+
+    </div>
   )
 }
 
