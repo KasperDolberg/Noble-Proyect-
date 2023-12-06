@@ -6,7 +6,7 @@
     rgb(255, 255, 255) 100%
   );
   --bg-secondary: rgb(62, 64, 65);
-  --details: rgb(240, 110, 0);
+  --details: #FFAD0A;
   --grey-text: rgba(0, 0, 0, 0.6);
   --black-text: rgb(0, 0, 0);
   --white: rgb(255, 255, 255);

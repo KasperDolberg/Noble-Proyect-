@@ -164,7 +164,6 @@ img {
 .nav__perfil {
   display: flex;
   flex-direction: column;
- 
   margin-bottom: 3rem;
   justify-content: start;
 }

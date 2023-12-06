@@ -1,0 +1,260 @@
+@import url("/src/stylesheets/global/variables.css");
+
+
+*{
+    font-family: var(--font-family);
+}
+
+/* ----------------- GENERALS CONTAINERS  -------------------- */
+section{
+    background-color: var(--bg-footer-color);
+}
+.container-total {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-footer-color);
+}
+
+.container-content {
+    width: 85%;
+    height: 100%;
+}
+
+.container-cards {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;  
+    align-content: center;
+}
+
+.card-model {
+    height: 35rem;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 4fr 1fr 1fr;
+    background-color: var(--white);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+
+
+/* ----------- IMAGE STYLES ----------- */
+.image-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+/* ------------ MODEL NAME ---------- */
+.name-car {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.name-car h2 {
+    display: grid;
+    align-content: center;
+}
+
+.container-titles {
+    display: grid;
+    width: 90%;
+}
+
+.container-btn {
+    display: grid;
+    width: 90%;
+    height: 80%;
+    justify-items: end;
+    align-items: end;
+}
+
+
+
+
+
+
+
+
+
+
+/* -------------- SPECIFICATIONS STYLES -------------- */
+.container-specifications {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+}
+
+.specifications {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    border-radius: 10px;
+    background-color: rgb(238, 239, 242);
+}
+
+.specifications div {
+    width: 100%;
+}
+
+.title_big{
+    color: var(--black);
+    overflow-wrap: anywhere;
+    font-size: 2rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.825rem;
+    width: 85%;
+}
+
+.title_big span {
+    color: var(--details);
+    overflow-wrap: anywhere;
+    font-size: 1rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.825rem;
+    width: 100%;
+    padding-bottom: .7rem;
+}
+
+.title_small {
+    color: var(--grey-text);
+    overflow-wrap: anywhere;
+    font-size: 1.2rem;
+    letter-spacing: -0.01875rem;
+    line-height: 1.125rem;
+}
+
+.power {
+    width: 80%;
+    padding-left: 2rem;
+}
+
+.mph {
+    padding-left: 4%;
+}
+
+
+
+
+
+
+/* ------------ MEDIA QUERIES ------------ */
+
+/* MOBILE S */
+@media (max-width: 390px) {
+    .card-model {
+        grid-template-rows: 40% 30% 25%;
+    }
+    .specifications {
+        display: grid;
+        align-items: center;
+        width: 95%;
+        height: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        border-radius: 10px;
+    }
+    .specifications div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .power {
+        width: 80%;
+        padding-left: 0rem;
+    }
+    
+    .mph {
+        padding-left: 0;
+    }
+
+    .specifications .p {
+        padding-left: 1.2rem;
+    }
+    .title_small {
+        padding-top: .5rem;
+    }
+}
+
+
+/* MOBILE L */
+@media (max-width: 430px) {
+    .card-model {
+        height: 10rem;
+    }
+}
+
+
+
+
+/* TABLET S */
+@media (max-width: 560px) {
+    .card-model {
+        height: 2rem;
+        grid-template-rows: 48% 20% 30%;
+    }
+    .specifications {
+        column-gap: 5px;
+    }
+    .h2{
+        font-size: 1rem;
+    }
+}
+
+/* TABLET M */
+@media (max-width: 650px) {
+    .card-model {
+        height: 23rem;
+    }
+    .title_big{
+        font-size: 1.5rem;
+    }
+    .title_small {
+        font-size: .8rem;
+    }
+}
+
+/* TABLET L */
+@media (max-width: 768px) {
+    .card-model {
+        height: 28rem;
+    }
+    .title_big{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+/* LAPTOP S */
+@media (max-width: 920px) {
+    .card-model {
+        height: 28rem;
+    }
+}
+
+/* LAPTOP M */
+@media (max-width: 1024px) {
+    .card-model {
+        height: 28rem;
+    }
+}

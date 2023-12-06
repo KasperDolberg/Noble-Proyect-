@@ -22,7 +22,6 @@ function App() {
        <Route path="/about" element={<About />} />   
        <Route path="/finance" element={<Finance />} />  
        <Route path="/news" element={<News />} />  
-
     </Routes>
     </>
   );

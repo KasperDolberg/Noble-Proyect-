@@ -1,0 +1,33 @@
+@import url("src/stylesheets/global/variables.css");
+
+.container-section{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 250vh;
+    background-color: aqua;
+    grid-template-columns: 70% 30%;
+}
+.slide-Container{
+    display: grid;
+    width: 95%;
+    height: 100%;
+    background-color: chartreuse;
+
+}
+.config-Container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+

@@ -31,7 +31,7 @@ const Section1 = () => {
           {/* BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS */}
           <div className="css-1xdm420">
             <div className="css-5pduei">
-              <Link to='/configure' role="link" className="css-rzaghs" id="172178027">
+              <Link to='/available-cars' role="link" className="css-rzaghs" id="172178027">
                 <span className="css-1n75gs1">
                   <span className="css-1lfoa71">Available cars</span>
                   <span
