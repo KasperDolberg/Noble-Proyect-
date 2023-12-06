@@ -8,8 +8,8 @@ const btn = ({Text, to}) => {
     <div>
         <button type="button" data-focus-theme="light" className="css-1lb0miy">
             <span className="css-zkwrbp">
-                <span className="css-7au4jc">{Text}</span>
-                <span aria-hidden="true" data-type="icon" className="css-12lxxes">
+                <span className="css-7au4jc"  style={{fontSize: '1.2rem'}}>{Text}</span>
+                <span aria-hidden="true" data-type="icon" className="css-12lxxes" style={{fontSize: '1.2rem'}}>
                 <div className="css-1ckl8y4">
                     <div className="css-jyc14k" style={{ opacity: 1, transform: "translateX(0em)" }}>
                     <svg viewBox="0 0 16 16" fill="none" height="1em" role="img" aria-label="arrowRight" className="css-1krb9jt">

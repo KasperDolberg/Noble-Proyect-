@@ -1,70 +1,43 @@
-import React from 'react'
-import '/src/stylesheets/news/Nsection1.css';
-import '/src/stylesheets/AvailableCar/A-section.css'
-import Btn from '../global/buttons/btn'; 
+import React from 'react';
+import Header from '/src/components/global/Header.jsx';
+import '/src/stylesheets/AvailableCar/A-section.css';
+import ModelCard from './modelCard';
 
 const Asection1 = () => {
+
+  const cardModelData = [
+    { imgSrc: '/src/img/availableCars/evija.png', carName: 'E Target', price: '140,000', power: '2000', mph: '3.0', speed: '180'},
+    { imgSrc: '/src/img/availableCars/emira2.png', carName: 'M 200', price: '80,000', power: '400', mph: '4.6', speed: '180'},
+    { imgSrc: '/src/img/availableCars/eletre.png', carName: 'E 300', price: '67,000', power: '600', mph: '4.2', speed: '150'},
+    ];
+
   return (
-    <div className='container-absolute2'>
+    <section>
+    <Header title={'Available Cars'} />
+    <div className='container-total'>
+          <div className="container-content">
 
-          <div className="container-square2">
+            <div className="container-cards">
+            {cardModelData.map((card, index) => (
+            <ModelCard
+            key={index}
+            imgSrc={card.imgSrc}
+            carName={card.carName}
+            price={card.price}
+            power={card.power}
+            mph={card.mph}
+            speed={card.speed}
             
+              />
+            ))}
 
-
-
-              <div className="title-models">
-                    <h2>Models</h2>
-                    <div className="line-grey"></div>
-              </div>
-
-            
-              <div className="container-models-section">           
-                    <div className="select-model-container "></div>
-
-                    <div className="slider-container">
-                      <div className="slider">Soy un slider</div>
-                    </div>
-              </div>
-
-
-
-               <div className="characteristics-container">
-
-                  <div className="characteristics">
-
-                          <div class="css-1schyut"></div>
-                          <h2 className='brand-name'>Noble M600 | 2005</h2>
-                          <p className='second-name'>Long range Dual motor - AWD</p>  
-                          <div class="css-1schyut"></div>
-  
-                              <div className='characteristics-wrap'>
-                                <h3>Power</h3>
-                                <p>310 kW / 421 hp</p>
-
-                              </div>  
-
-                              <div className='characteristics-wrap'>
-                                <h3>0 - 60 mph</h3>
-                                <p>4.3 sec</p>
-                              </div>  
-
-                              <div className='characteristics-wrap'>
-                                <h3>Range</h3>
-                                <p>276 miles</p>
-                              </div>
-
-                          <button>
-                            <div>$ 60,450</div>
-                            <Btn Text="Explore" to="/#"/>
-                         </button>
-                  </div>
-                          
-                </div>
-
-
-          </div>
-
+                
+            </div>
+     
+     </div>
     </div>
+                   
+    </section>
   )
 }
 

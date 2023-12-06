@@ -1,146 +1,260 @@
 @import url("/src/stylesheets/global/variables.css");
 
+
 *{
     font-family: var(--font-family);
 }
 
 /* ----------------- GENERALS CONTAINERS  -------------------- */
-.container-absolute2 {
+section{
+    background-color: var(--bg-footer-color);
+}
+.container-total {
+    min-height: 100vh;
     width: 100%;
-    min-height: 160vh;
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    background-color: var(--bg-footer-color);
 }
 
-.container-square2{
+.container-content {
     width: 85%;
-    min-height: 100%;
-    background-color: blue;
-    display: grid;
-    grid-template-rows: 10% 58% 32%;
-}
-
-/* ------------- header title ---------------- */
-.title-models {
-    min-height: 9%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-}
-.title-models h2 {
-    font-size: 1.85rem;
-    padding-bottom: .2rem;
-}
-
-.line-grey {
-    width: 100%;
-    height: 1px;
-    background-color:rgba(0, 0, 0, 2); 
-}
-
-
-
-
-/* ------------------- MODELS CONTAINER ----------------- */
-.container-models-section {
-    background-color: brown;
     height: 100%;
+}
+
+.container-cards {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;  
+    align-content: center;
+}
+
+.card-model {
+    height: 35rem;
     width: 100%;
     display: grid;
-    grid-template-columns: 25% 1fr;
-    column-gap: 1.5rem;
-}
-
-.slider-container {
-    background-color: blueviolet;
-}
-
-.select-model-container {
-    background-color: yellow;
+    grid-template-rows: 4fr 1fr 1fr;
+    background-color: var(--white);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 
 
-
-
-/* ----------------SLIDER CONTENT STYLES -----------------*/
-.slider-container {
-    background-color:teal;
+/* ----------- IMAGE STYLES ----------- */
+.image-container {
     width: 100%;
-}
-
-.slider {
-    width: 100%;
-    height: 60%;
-}
-
-
-
-
-/* ----------------- CHARACTERISTICS STYLES ---------------- */
-.characteristics-container {
-    background-color: rgb(9, 255, 0);
+    height: auto;
     display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+/* ------------ MODEL NAME ---------- */
+.name-car {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.name-car h2 {
+    display: grid;
+    align-content: center;
+}
+
+.container-titles {
+    display: grid;
+    width: 90%;
+}
+
+.container-btn {
+    display: grid;
+    width: 90%;
+    height: 80%;
+    justify-items: end;
+    align-items: end;
+}
+
+
+
+
+
+
+
+
+
+
+/* -------------- SPECIFICATIONS STYLES -------------- */
+.container-specifications {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+}
+
+.specifications {
+    display: flex;
     align-items: center;
+    width: 95%;
+    height: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    border-radius: 10px;
+    background-color: rgb(238, 239, 242);
 }
 
-.characteristics {
-    background-color: #ccc;
+.specifications div {
+    width: 100%;
 }
 
-.characteristics div h3 {
+.title_big{
+    color: var(--black);
+    overflow-wrap: anywhere;
+    font-size: 2rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.825rem;
+    width: 85%;
+}
+
+.title_big span {
+    color: var(--details);
     overflow-wrap: anywhere;
     font-size: 1rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.825rem;
+    width: 100%;
+    padding-bottom: .7rem;
+}
+
+.title_small {
+    color: var(--grey-text);
+    overflow-wrap: anywhere;
+    font-size: 1.2rem;
     letter-spacing: -0.01875rem;
     line-height: 1.125rem;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    transition: color 200ms ease 0s;
-    color: rgba(0, 0, 0, 0.6);
-    position: relative;
-    text-align: left;
-    width: 50%;
 }
 
-.characteristics div p {
-    color: rgb(0, 0, 0);
-    overflow-wrap: anywhere;
+.power {
+    width: 80%;
+    padding-left: 2rem;
 }
 
-.characteristics-wrap {
-    display: grid;
-    grid-template-columns: 50% 50%;
+.mph {
+    padding-left: 4%;
 }
 
 
-.css-1schyut {
-    flex-shrink: 0;
-    transition: width 300ms ease 0s, height 300ms ease 0s;
-    height: 1.5rem;
+
+
+
+
+/* ------------ MEDIA QUERIES ------------ */
+
+/* MOBILE S */
+@media (max-width: 390px) {
+    .card-model {
+        grid-template-rows: 40% 30% 25%;
+    }
+    .specifications {
+        display: grid;
+        align-items: center;
+        width: 95%;
+        height: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        border-radius: 10px;
+    }
+    .specifications div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .power {
+        width: 80%;
+        padding-left: 0rem;
+    }
+    
+    .mph {
+        padding-left: 0;
+    }
+
+    .specifications .p {
+        padding-left: 1.2rem;
+    }
+    .title_small {
+        padding-top: .5rem;
+    }
 }
 
-.brand-name {
-    color: rgb(0, 0, 0);
-    overflow-wrap: anywhere;
-    font-size: 1.875rem;
-    letter-spacing: -0.075rem;
-    line-height: 2rem;
+
+/* MOBILE L */
+@media (max-width: 430px) {
+    .card-model {
+        height: 10rem;
+    }
 }
 
-.second-name {
-    overflow-wrap: anywhere;
-    font-size: 1rem;
-    letter-spacing: -0.01875rem;
-    line-height: 1.125rem;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    transition: color 200ms ease 0s;
-    color: rgba(0, 0, 0, 0.6);
-    position: relative;
-    text-align: left;
-    width: 50%;
+
+
+
+/* TABLET S */
+@media (max-width: 560px) {
+    .card-model {
+        height: 2rem;
+        grid-template-rows: 48% 20% 30%;
+    }
+    .specifications {
+        column-gap: 5px;
+    }
+    .h2{
+        font-size: 1rem;
+    }
+}
+
+/* TABLET M */
+@media (max-width: 650px) {
+    .card-model {
+        height: 23rem;
+    }
+    .title_big{
+        font-size: 1.5rem;
+    }
+    .title_small {
+        font-size: .8rem;
+    }
+}
+
+/* TABLET L */
+@media (max-width: 768px) {
+    .card-model {
+        height: 28rem;
+    }
+    .title_big{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+/* LAPTOP S */
+@media (max-width: 920px) {
+    .card-model {
+        height: 28rem;
+    }
+}
+
+/* LAPTOP M */
+@media (max-width: 1024px) {
+    .card-model {
+        height: 28rem;
+    }
 }

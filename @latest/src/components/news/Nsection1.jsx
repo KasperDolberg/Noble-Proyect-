@@ -1,17 +1,15 @@
 import React from 'react'
 import '/src/stylesheets/news/Nsection1.css';
 import Btn from '../global/buttons/btn';
+import Header from '../global/Header';
 
 const Nsection1 = () => {
   return (
+    <>
+    <Header title={'News'}/>
     <div className='container-absolute'>
 
         <div className="container-square">
-
-            <div className="title-news">
-                <h2>News</h2>
-                <div className="line-grey"></div>
-            </div>
             
             <div className="break-news">
 
@@ -42,6 +40,7 @@ const Nsection1 = () => {
 
 
     </div>
+    </>
   )
 }
 
