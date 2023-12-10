@@ -2,16 +2,18 @@
 
 .container-section{
     display: grid;
-    place-items: center;
+    align-items: start;
+    justify-items: center;
     width: 100%;
     height: 250vh;
     background-color: aqua;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 40%;
 }
 .slide-Container{
-    display: grid;
+    position: sticky;
+    bottom: 0;
     width: 95%;
-    height: 100%;
+    height: 50%;
     background-color: chartreuse;
 
 }
@@ -21,9 +23,6 @@
     height: 100%;
     background-color: pink;
 }
-
-
-
 
 
 

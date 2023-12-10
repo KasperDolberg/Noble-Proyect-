@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('src/stylesheets/global/variables.css');
+.Finance-container{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: teal;
+  
+}
+.Column-setting{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    width: 95%;
+    height: 100vh;
+   align-items: start;
+}
+.column-slider{
+    display: grid;
+    align-items: start;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(8, 14, 13);
+}
+.column-content{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: purple;
+}
