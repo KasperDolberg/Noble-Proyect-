@@ -2,7 +2,7 @@ import React from 'react'
 import '/src/stylesheets/news/Nsection1.css';
 import Btn from '../global/buttons/btn'; 
 
-const modelCard = ({imgSrc, carName, price, power, mph, speed}) => {
+const modelCard = ({imgSrc, carName, price, power, mph, speed, ConfigurateCarPath}) => {
   return (
       <div className="card-model">
                
@@ -16,7 +16,7 @@ const modelCard = ({imgSrc, carName, price, power, mph, speed}) => {
                            <p className='title_small'>from ${price} USD</p> 
                        </div>  
                        <div className="container-btn">
-                           <Btn Text={'Configure'} to="/news"/>
+                           <Btn Text={'Configure'} to={ConfigurateCarPath}/>
                        </div> 
                </div>
 

@@ -7,9 +7,9 @@ import { Link } from 'react-router-dom'
 const section3 = () => {
     
     const slides = [
-        { url: '/src/img/home/Section3/IMG2PRUEBA.jpg', name: 'E Target', description: 'The redefinition of a sports car', price: '$140,000', },
-        { url: '/src/img/home/Section3/IMG1PRUEBA.jpg', name: 'M200', description: 'A desing from the near future', price: '$80,000', },
-        { url: '/src/img/home/Section3/IMG3PRUEBA.jpg', name: 'E300', description: 'The electric SUV', price: '$67,000', },
+        { url: '/src/img/home/Section3/IMG2PRUEBA.jpg', name: 'E Target', description: 'The redefinition of a sports car', price: '$140,000', configurePath: '/Etarget'},
+        { url: '/src/img/home/Section3/IMG1PRUEBA.jpg', name: 'M200', description: 'A desing from the near future', price: '$80,000', configurePath: '/M200'},
+        { url: '/src/img/home/Section3/IMG3PRUEBA.jpg', name: 'E300', description: 'The electric SUV', price: '$67,000', configurePath: '/E300'},
       ];
       
 
@@ -23,7 +23,7 @@ const section3 = () => {
         }
 
         // SLIDE BOTTON RIGHT LOGIC
-        const nextSlide = () =>{
+        const nextSlide = () =>{ 
             const isLastSlide = currentIndex === slides.length - 1;
             const newIndex = isLastSlide ? 0 : currentIndex + 1;
             setCurrentIndex(newIndex);
@@ -52,7 +52,7 @@ return (
                         <div class="css-1schyutt"></div>
                         <div className="css-1xdm420">
                             <div className="css-5pduei">
-                            <Link to="/configure" role="link" className="css-13c2ifd">
+                            <Link to={slides[currentIndex].configurePath} role="link" className="css-13c2ifd">
                                 <span className="css-1j2esho">
                                     <span className="css-1lfoa711">Configure</span>
                                     <span aria-hidden="true" data-type="icon" className="css-1lru1qp">
