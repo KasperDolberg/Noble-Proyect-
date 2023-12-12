@@ -11,7 +11,7 @@ const Section5 = () => {
         <div className="cards-container">
 
             <div className="card-about">
-            <div className="image-container">
+            <div className="image__container">
                <img src="/src/img/home/Section5/company.jpg" alt="" />
             </div> 
               <div className="title-container-father">
@@ -62,7 +62,7 @@ const Section5 = () => {
 
 
             <div className="card-news">
-              <div className="image-container">
+              <div className="image__container">
                 <img src="/src/img/home/Section5/news-2.jpg" alt="" />
               </div> 
               <div className="title-container-father">

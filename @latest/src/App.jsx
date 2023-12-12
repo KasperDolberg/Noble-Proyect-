@@ -5,12 +5,11 @@ import Home from "/src/pages/Home";
 import Gallery from "./pages/Gallery";
 import AvailableCars from "./pages/AvailableCars";
 import About from "./pages/About";
-import Finance from "./pages/finance";
+import Finance from "./pages/Finance";
 import News from "./pages/News";
 import E300 from "/src/components/Configure/E300";
 import Etarget from "/src/components/Configure/Etarget";
 import M200 from "/src/components/Configure/M200";
-
 
 
 

@@ -80,6 +80,14 @@
 }
 
 /* ---------------- BUTTONS --------------------- */
+.css-13c2ifd {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    padding: 0;
+    display: inline-block;
+    max-width: 100%;
+}
+
 .css-cfxo7m {
     color: var(--white);
 }
@@ -111,10 +119,12 @@
     color: rgb(255, 255, 255);
     height: 3rem;
     padding: 0 2rem 0 1rem; }
+    
 
 .css-1lfoa711 {
  color: var(--white);
 }
+
 
 
 

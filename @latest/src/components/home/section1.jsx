@@ -4,18 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Section1 = () => {
   return (
-    <div className="swiper">
-      <div className="swiper-slide first">
-        {/* <div className="bg-color-one"></div>
-        <div className="bg-color-two"></div> */}
-        <div className="father-container">
-          <div className="icon-white-container">
-            <div className="noble-icon-white">
-              <img src="/src/img/home/Section1/LOGO.png" alt="" />
-            </div>
-          </div>
-        {/* SETTINGS CONTAINERS */}
-
+  <div className="father-container">
       {/* INFO CONTAINER */}
       <div className="info-container">
         <div className="text">
@@ -62,7 +51,7 @@ const Section1 = () => {
                   </span>
                 </span>
               </Link>
-              <a role="link" className="css-13c2ifd" href="#">
+              <Link to={'/gallery' } className="css-13c2ifd">
                 <span
                   data-focus-theme="light"
                   id="146980041"
@@ -98,9 +87,8 @@ const Section1 = () => {
                     </span>
                   </span>
                 </span>
-              </a>
+              </Link>
             </div>
-            <div className="css-yd35ng"></div>
           </div>
           {/* BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS */}
         </div>
@@ -110,14 +98,11 @@ const Section1 = () => {
 
 
   {/* PRINCIPAL LETTERS AND THE CAR */}
-        <div className="StylesMain">       
-        </div>
+        <div className="StylesMain"></div>
   {/* PRINCIPAL LETTERS AND THE CAR */}
 
 
-      </div>
     </div>
-  </div>
     /*===============================================INDEX HOME CONTAINER=============================================*/
   );
 };

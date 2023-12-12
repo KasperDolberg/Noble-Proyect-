@@ -1,14 +1,12 @@
 import React from 'react'
-import Nav from "/src/components/global/Nav.jsx";
 import Asection1 from '/src/components/AvailableCars/A-section1'
 import Footer from "/src/components/global/Footer.jsx";
-
-
+import Navbar from '../components/global/Navbar';
 
 const AvailableCars = () => {
   return (
     <>
-    <Nav/>
+    <Navbar />
     <Asection1/>
     <Footer/>
     </>

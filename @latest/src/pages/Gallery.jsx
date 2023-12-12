@@ -1,8 +1,10 @@
 import React from 'react'
 
+
 const Gallery = () => {
   return (
-    <div>Gallery viejo nomas
+    <div>
+      Gallery viejo nomas
     </div>
   )
 }

@@ -38,11 +38,8 @@
     align-content: start;
     width: 100%;
     height: 100%;
-    padding-bottom: 2rem;
+    padding-bottom: 2.6rem;
 }
-
-
-
 
 
 .config-content {
@@ -55,8 +52,6 @@
     background-color: var(--white);
     height: 5rem;
     width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
     display: grid;
     align-content: end;
     grid-template-columns: 50% 50%;
@@ -154,6 +149,15 @@
 .color__container div {
     position: relative;
     max-width: 100%;
+}
+
+.color__container button {
+    position: relative;
+    max-width: 100%;
+}
+
+.color__container button:hover {
+    transform: scale(1.04);
 }
 
 .color__container div:hover {

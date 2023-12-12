@@ -1,12 +1,11 @@
 @import url("/src/stylesheets/global/variables.css");
-
-
 *{
     font-family: var(--font-family);
 }
 
 /* ----------------- GENERALS CONTAINERS  -------------------- */
-section{
+.section{
+    padding: 0;
     background-color: var(--bg-footer-color);
 }
 .container-total {
@@ -14,7 +13,6 @@ section{
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: var(--bg-footer-color);
 }
 
 .container-content {
@@ -64,7 +62,7 @@ section{
 .name-car {
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 .name-car h2 {
@@ -77,14 +75,47 @@ section{
     width: 90%;
 }
 
+
+/* ----------- BUTTONS STYLES --------- */
+
 .container-btn {
     display: grid;
     width: 90%;
     height: 80%;
-    justify-items: end;
-    align-items: end;
 }
 
+.css-13c2ifd_ {
+    display: grid;
+    align-content: end;
+    height: 80%;
+    padding-right: 1rem;
+}
+
+.css-1j2esho_ {
+    flex: 1;
+    display: flex;
+    align-items: start;
+    line-height: 2em;
+    height: 100%;
+    width: 100%;
+    padding-block-start: 2px;
+    max-width: 100%;
+}
+
+.css-1lru1qp_ {
+    font-size: 1rem;
+    height: calc(1.5 * 1rem);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    display: inline-flex;
+    align-items: end;
+    transition: color 200ms;
+    display: flex;
+    justify-content: center;
+    min-width: 1rem;
+    margin-inline-start: 0.375rem;
+}
 
 
 

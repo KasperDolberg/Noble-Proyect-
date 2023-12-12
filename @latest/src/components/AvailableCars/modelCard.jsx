@@ -1,6 +1,6 @@
 import React from 'react'
 import '/src/stylesheets/news/Nsection1.css';
-import Btn from '../global/buttons/btn'; 
+import { Link } from 'react-router-dom';
 
 const modelCard = ({imgSrc, carName, price, power, mph, speed, ConfigurateCarPath}) => {
   return (
@@ -15,9 +15,20 @@ const modelCard = ({imgSrc, carName, price, power, mph, speed, ConfigurateCarPat
                            <h2 className='title_big'>{carName}</h2> 
                            <p className='title_small'>from ${price} USD</p> 
                        </div>  
-                       <div className="container-btn">
-                           <Btn Text={'Configure'} to={ConfigurateCarPath}/>
-                       </div> 
+                       <Link to={ConfigurateCarPath} role="link" className="css-13c2ifd_">
+                                <span className="css-1j2esho_">
+                                    <span className="css-1lfoa7111" style={{fontSize: '1.2rem'}}>Configure</span>
+                                    <span aria-hidden="true" data-type="icon" className="css-1lru1qp_">
+                                        <div className="css-1ckl8y4">
+                                            <div className="css-jyc14k" style={{ opacity: 1, transform: 'translateX(0em)', fontSize: '1.2rem'}} >
+                                            <svg viewBox="0 0 16 16" fill="none" height="1em" role="img" aria-label="arrowRight" className="css-1krb9jt">
+                                                <path d="M8 2 6.95 3.05l4.2 4.2H2v1.5h9.15l-4.2 4.2L8 14l6-6-6-6Z" fill="#FFAD0A"></path>
+                                            </svg>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </span>
+                        </Link>
                </div>
 
                <div className="container-specifications">

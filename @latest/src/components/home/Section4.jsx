@@ -37,7 +37,7 @@ const Section4 = () => {
                                 </span>
                             </span>
                             </Link>   
-                            <Link to='/configure' role="link" className="css-16jz8pg" id="142455775">
+                            <Link to='/E300' role="link" className="css-16jz8pg" id="142455775">
                             <span className="css-1j2esho">
                                 <span className="css-1lfoa711">Configure</span>
                                 <span aria-hidden="true" data-type="icon" className="css-1lru1qp">

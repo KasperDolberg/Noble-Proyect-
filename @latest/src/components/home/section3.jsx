@@ -4,6 +4,8 @@ import {RxDotFilled} from 'react-icons/rx'
 import '/src/stylesheets/home/Section3.css';
 import { Link } from 'react-router-dom'
 
+
+
 const section3 = () => {
     
     const slides = [

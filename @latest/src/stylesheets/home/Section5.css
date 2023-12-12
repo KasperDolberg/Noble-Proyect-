@@ -12,7 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--white);
 }
 
 .container-secondary {
@@ -58,7 +57,7 @@
 
 
 /* ---------------  IMAGE  ---------------------- */
-.image-container {
+.image__container {
     overflow: hidden;
 }
 

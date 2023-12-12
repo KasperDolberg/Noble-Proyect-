@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
-import Nav from "/src/components/global/Nav.jsx";
 import '/src/stylesheets/AboutUs/About.css';
 import Footer from "/src/components/global/Footer.jsx";
 import simplyVideo from '/src/img/AboutUs/VIDEO.mp4'
@@ -56,7 +55,6 @@ const About = () => {
   return (
 
  <div className='SETTINGS-CONTAINER'>
-    <Nav />
     <div className='Section-1'>
       <div className='container-85'>
         {/* -------------------header------------ */}
