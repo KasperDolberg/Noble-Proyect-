@@ -1,27 +1,273 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url("src/stylesheets/global/variables.css");
+
 
 .container-section{
     display: grid;
-    align-items: start;
-    justify-items: center;
-    width: 100%;
-    height: 250vh;
-    background-color: aqua;
-    grid-template-columns: 60% 40%;
-}
-.slide-Container{
-    position: sticky;
-    bottom: 0;
-    width: 95%;
-    height: 50%;
-    background-color: chartreuse;
-
-}
-.config-Container{
-    display: grid;
+    justify-items: end;
     width: 100%;
     height: 100%;
-    background-color: pink;
+    grid-template-columns: 65% 35%;
+}
+.slide-Container{
+    display: grid;
+    width: 96%;
+    height: 100%;   
+}
+
+.slider__ {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.sllider-for-real {
+    height: 100%;
+    width: 100%;
+}
+
+.config-Container{
+    display: grid;
+    justify-items: center;
+    align-content: start;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2rem;
+}
+
+.config-content {
+    height: 100%;
+    width: 85%;
+    display: grid;
+}
+
+.container__title {
+    background-color: var(--white);
+    height: 5rem;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: grid;
+    align-content: end;
+    grid-template-columns: 50% 50%;
+    border-bottom: 1px solid;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.title__header {
+    display: grid;
+    align-content: end;
+    font-size: 2rem;
+    padding-bottom: .2rem;
+}
+
+.title__small {
+    color: var(--grey-text);
+    overflow-wrap: anywhere;
+    font-size: 1rem;
+    letter-spacing: -0.01875rem;
+    line-height: 1.125rem;
+}
+
+.price-container{
+    display: grid;
+    justify-items: end;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.price-container h2{
+    color: var(--black);
+    overflow-wrap: anywhere;
+    font-size: 1.875rem;
+    letter-spacing: -0.075rem;
+    line-height: 2.3rem;
+    white-space: nowrap;
+}
+
+
+
+
+/*------------ EXTERIOR STYLES ---------  */
+.exterior__container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: 15% 20% 60%;
+    height: 13rem;
+    width: 99%;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    color: var(--black);
+    overflow-wrap: anywhere;
+    font-size: 1.875rem;
+    letter-spacing: -0.075rem;
+    line-height: 2rem;
+}
+
+.color__price {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    max-height: 100%;
+}
+
+.text__price {
+    color: var(--black);
+    overflow-wrap: anywhere;
+    font-size: 1rem;
+    letter-spacing: -0.01875rem;
+    line-height: 1.125rem;
+    margin-top: .4rem;
+
+}
+
+.color__price p {
+    overflow-wrap: anywhere;
+    color: rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+    text-align: right;
+}
+
+.color__container {
+    max-height: 7rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+}
+
+.color__container div {
+    position: relative;
+    max-width: 100%;
+}
+
+.color__container div:hover {
+    transform: scale(1.04);
+}
+
+
+
+
+
+/* ---------- INTERIOR SECTION  --------- */
+.interior__container {
+    margin-top: 2rem;
+    height: 13rem;
+    display: grid;
+    grid-template-rows: 20% 10% 70%;
+    margin-bottom: 4rem;
+}
+
+.img__cont div {
+    height: 80%;
+    width: 70%
+}
+
+.img__cont div img {
+    object-fit: cover;
+}
+
+.opcional-text {
+    overflow-wrap: anywhere;
+    color: rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+    text-align: left;
+}
+
+
+
+
+/* ---------- WHEELS SECTION ---------- */
+.wheels__container {
+    margin-top: 2rem;
+    height: 13rem;
+    margin-bottom: 3rem;
+}
+.img-box div {
+    height: 80%;
+    width: 70%
+}
+
+.img-box div img {
+    object-fit: cover;
+}
+
+
+/* ------------ MOTOR SECTION ---------- */
+.motor__container {
+    margin-top: 2rem;
+}
+
+
+.text__prices {
+    color: var(--black);
+    overflow-wrap: anywhere;
+    font-size: 1rem;
+    letter-spacing: -0.01875rem;
+    line-height: 1.125rem;
+    margin-top: .4rem;
+    margin-bottom: 1rem;
+}
+
+.css-12j2ifn {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    transition: all 300ms ease 0s;
+    border: 2px solid rgb(240, 110, 0);
+}
+
+.css-1w2qc6x {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.css-18nul6i {
+    color: rgb(0, 0, 0);
+    overflow-wrap: anywhere;
+    text-align: left;
+}
+
+.css-cdn3gz {
+    overflow-wrap: anywhere;
+    color: rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+    text-align: right;
+}
+
+.css-1hbibbm {
+    flex-shrink: 0;
+    transition: width 300ms ease 0s, height 300ms ease 0s;
+    height: 1rem;
+}
+
+.css-186d83t {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    transition: all 300ms ease 0s;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 
@@ -29,4 +275,54 @@
 
 
 
+@media (max-width: 1180px) {
+    .title__header {
+        font-size: 1.65rem;
+    }
+}
 
+@media (max-width: 974px) {
+    .container-section{
+        display: grid;
+        justify-items: center;
+        align-content:start ;
+        width: 100%;
+        height: 320vh;
+        grid-template-rows: 35% 50%;
+        grid-template-columns: 100%;
+    }
+
+    .THEY-KNOW-ME-SON {
+        padding: 0%;
+    }
+    
+    .slider__ {
+        background-color: white;
+        height: 100vh;
+        display: flex;
+        justify-content: end;
+        position:static;
+        top: 0;
+    }
+
+    .slide-Container{
+        display: grid;
+        width: 96%;
+        height: 50%; 
+        align-content: start;
+        background-color: blue;  
+}
+}
+
+@media (max-width: 550px) {
+    .container-section{
+        height: 330vh;
+    }
+}
+
+@media (max-width: 340px) {
+    .container-section{
+        height: 340vh;
+    }
+
+}

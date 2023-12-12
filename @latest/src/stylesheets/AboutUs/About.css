@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @import url('src/stylesheets/global/variables.css');
 
 *{
@@ -20,51 +19,9 @@
 }
 .container-85{
     display: grid;
-    grid-template-rows: 25% 75%;
     height: 100%;
     width: 85%;
 }
-/* ------------------start-header------------ */
-.header-{
-    display: grid;
-    grid-template-rows: 40% 60%;
-    height: 100%;
-    width: 100%;
-}
-.about-noble-{
-    display: grid;
-    height: 100%;
-    width: 100%;
-    align-items: end;
-    justify-items: start;
-    border-bottom: 1px solid ;
-}
-.Tittle-{
-    color: rgb(0, 0, 0);
-    overflow-wrap: anywhere;
-    font-size: 1.875rem;
-    letter-spacing: -0.075rem;
-    line-height: 2rem;
-}
-.philosophy-{
-     display: grid;
-     padding-top: 10px;
-     height: 100%;
-     width: 100%;
-     align-items: start;
-     justify-items: start;
-}
-.text-phi{
-    color: #000;
-    font-size: 1.375rem;
-    font-weight: 400;
-    line-height: 2rem;
-    letter-spacing: -0.075rem;
-}
-.space---{
-    display: block;
-}
-/* -----------------end---header------------ */
 .main{
     display: grid;
     height: 100%;
@@ -80,44 +37,6 @@
     height: 70vh;
     object-fit: cover;
   }
-  @media (max-width: 1200px) {
-    .text-phi{
-        color: #000;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 2rem;
-        letter-spacing: -0.075rem;
-    }
-    
-}
-@media (max-width: 756px) {
-.Section-1{
-    display: grid;
-    height: 120vh;
-    width: 100%;
-    place-items: center;
-}
-.container-85{
-    display: grid;
-    grid-template-rows: 35% 65%;
-    height: 100%;
-    width: 85%;
-}
-}
-@media (max-width: 385px){
-    .Section-1{
-        display: grid;
-        height: 130vh;
-        width: 100%;
-        place-items: center;
-    }
-    .container-85{
-        display: grid;
-        grid-template-rows: 35% 65%;
-        height: 100%;
-        width: 85%;
-    }
-}
 /* --------------------------------------------SECTION-2---------------------------------------------------- */
 .Section-2{
     display: grid;
@@ -184,20 +103,23 @@
     width: 100%;
     height: 100%;
     display: grid;
+    justify-items: center;
+    align-items: end;
     grid-template-columns: 50% 50%;
 }
 .little-text-child-1-{
     display: grid;
-    align-items: center;
-    justify-items: start;
+    align-items: start;
     width: 100%;
-    height: 100%;
+    height: 70%;
+    padding: 0.5rem;
 }
 .little-text-child-2-{
     display: grid;
-    align-items: center;
+    align-items: start;
     width: 100%;
-    height: 100%;
+    height: 70%;
+    padding: 0.5rem;
 }
 .History-Text-{
     color: #000;
@@ -205,8 +127,6 @@
     font-weight: 400;
     line-height: 2rem;
     letter-spacing: -0.075rem;
-    word-wrap: break-word; /* Hace que las palabras se envuelvan al final de la línea si no hay espacio suficiente */
-    white-space: pre-line; /* Mantiene los saltos de línea en el texto original */
 }
 /* --------------img-------------- */
 .THEY-KNOW-ME-SON {
@@ -218,7 +138,6 @@
     }
    }
    
-
 @media (max-width: 385px){
     .Section-2{
         display: grid;
@@ -227,7 +146,6 @@
         place-items: center;
     }
 }
-
 @media (max-width: 1200px) {
     .Experience{
         color: rgb(0, 0, 0);
@@ -248,3 +166,55 @@
         white-space: pre-line; /* Mantiene los saltos de línea en el texto original */
     }
 }
+@media (max-width: 976px) {
+    .Section-2{
+        display: grid;
+        height: 190vh;
+        width: 100%;
+        place-items: center;
+    }
+    .container-85-section-2{
+        display: grid;
+        grid-template-rows: 40% 60%;
+        height: 100%;
+        width: 85%;
+    }
+    /* -----------------tittle-text---txt------------- */
+    .Text-here-{
+        display: grid;
+        grid-template-rows: 50% 50%;
+        width: 100%;
+        height: 100%;
+    }
+    .Text-S2{
+        display: grid;
+        grid-template-rows: 20% 90%;
+        grid-template-columns: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    .little-text-father-{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: end;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+    }
+    .little-text-child-1-{
+        display: grid;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem;
+    }
+    .little-text-child-2-{
+        display: grid;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem;
+    }
+    
+   }

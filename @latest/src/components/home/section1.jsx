@@ -1,9 +1,12 @@
 import React from 'react';
 import '/src/stylesheets/home/Section1.css';
 import { Link } from 'react-router-dom';
+import Navbar from "/src/components/global/Navbar.jsx";
 
 const Section1 = () => {
   return (
+   <>
+   	<Navbar/>
     <div className="swiper">
       <div className="swiper-slide first">
         {/* <div className="bg-color-one"></div>
@@ -118,6 +121,7 @@ const Section1 = () => {
       </div>
     </div>
   </div>
+  </>
     /*===============================================INDEX HOME CONTAINER=============================================*/
   );
 };

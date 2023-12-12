@@ -6,6 +6,7 @@
   font-weight: 400;
   color: var(--black-text);
 }
+
 .container-father-at-all {
   display: flex;
   justify-content: center;
