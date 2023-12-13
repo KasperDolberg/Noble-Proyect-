@@ -38,10 +38,13 @@ function Navbar() {
 			<button
 				className="nav-btn"
 				onClick={showNavbar}>
+
 				<i class='bx bx-menu' ></i>
+
 			</button>
 		</header>
 	);
 }
 
 export default Navbar;
+

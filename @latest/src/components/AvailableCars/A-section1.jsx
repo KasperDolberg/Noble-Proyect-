@@ -17,7 +17,6 @@ const Asection1 = () => {
     <Header title={'Available Cars'} number={'85%'}/>
     <div className='container-total'>
           <div className="container-content">
-
             <div className="container-cards">
             {cardModelData.map((card, name) => ( 
             <ModelCard
@@ -34,7 +33,6 @@ const Asection1 = () => {
 
                 
             </div>
-     
      </div>
     </div>
                    

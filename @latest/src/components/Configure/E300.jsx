@@ -107,7 +107,6 @@ const E300 = () => {
                             <h2>$ 67.000</h2>
                     </div>
             </div>
-
             <div className="exterior__container">
               <h2 className='section-title'>Exterior</h2>
               <div className="color__price">

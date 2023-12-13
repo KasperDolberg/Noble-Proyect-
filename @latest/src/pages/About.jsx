@@ -2,19 +2,22 @@
 import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
+import Header from '/src/components/global/Header';
 import '/src/stylesheets/AboutUs/About.css';
 import Footer from "/src/components/global/Footer.jsx";
 import simplyVideo from '/src/img/AboutUs/VIDEO.mp4'
+import Navbar from '/src/components/global/Navbar';
+
 
 
 const About = () => {
-
+  
     const slides = [
       {
-        url: 'src/img/AboutUs/S-1.webp',
+        url: ' src/img/AboutUs/S7.webp',
       },
       {
-        url: 'src/img/AboutUs/bg-1.jpg',
+        url: ' src/img/AboutUs/S-1.webp',
       },
       {
         url: 'src/img/AboutUs/S-3.webp',
@@ -22,9 +25,8 @@ const About = () => {
       {
         url: 'src/img/AboutUs/S-8.webp',
       },
-  
       {
-        url: 'src/img/AboutUs/S7.webp',
+        url: ' src/img/AboutUs/bg-1.jpg',
       },
       {
         url: 'src/img/AboutUs/S-6.webp',
@@ -53,22 +55,15 @@ const About = () => {
     };
 
   return (
-
+    <>
+<Navbar/>
  <div className='SETTINGS-CONTAINER'>
+
     <div className='Section-1'>
-      <div className='container-85'>
+   
         {/* -------------------header------------ */}
-        <div className='header-'>
-          <div className='about-noble-'>
-            <h1 className='Tittle-'>About Noble</h1>
-          </div>
-          <div className='philosophy-'>
-            <h2 className='text-phi'> 
-            Noble Automotive design and manufacture cars not in competition to the current super car establishment.
-             <span className='space---'>We offer driving purity and involvement to those serious about their driving. </span>
-            </h2>
-          </div>
-        </div>
+        <Header title={'About Noble'} number={'85%'}/>
+        <div className='container-85'>
         {/* -------------------maiN-------------- */}
         <div className='main'>
                  <video src={simplyVideo } autoPlay loop muted class='my-Video-my'/>     
@@ -123,7 +118,7 @@ const About = () => {
         </div>
     <Footer />
 </div>
-
+</>
   )
 }
 

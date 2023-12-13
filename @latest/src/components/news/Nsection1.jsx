@@ -6,7 +6,7 @@ import Header from '../global/Header';
 const Nsection1 = () => {
   return (
     <>
-    <Header title={'News'}/>
+    <Header title={'News'} number={'85%'} />
     <div className='container-absolute'>
 
         <div className="container-square">
